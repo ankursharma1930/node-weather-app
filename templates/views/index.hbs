@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    {{>head}}
+    <body>
+        {{>header}}
+        <div class="container">
+            <h1>{{title}}</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Search Location</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+                </div>
+            
+                <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <br>
+                <div class="container px-4 text-center" >
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3 border bg-light">Location</div>
+                            <div class="p-3 border bg-light" id="location"></div>
+                        </div>
+                        <div class="col">
+                        <div class="p-3 border bg-light">Weather</div>
+                        <div class="p-3 border bg-light" id="weather"></div>
+                        </div>
+                    </div>
+                    </div>
+        </div>
+        {{>footer}}
+    </body>
+    <script language="javascript" src="/customjs/custom.js"></script>
+</html>
